@@ -22,6 +22,7 @@
 1246252|LIME
 1246253|LIME
 1246254|LIME
+1246256|Digicel
 1246258|Digicel
 124626|Digicel
 124645|Sunbeach Communications
@@ -389,6 +390,7 @@
 180997|Orange
 180998|Orange
 180999|Tricom
+186827|Digicel
 186828|Digicel
 186829|Digicel
 18683|Digicel

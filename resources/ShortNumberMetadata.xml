@@ -872,7 +872,8 @@
             7(?:
               12|
               77
-            )
+            )|
+            813
           )|
           8\d{3}
         </nationalNumberPattern>
@@ -3929,14 +3930,20 @@
             02|
             171|
             444|
-            7[67]7|
+            7(?:
+              [67]7|
+              9
+            )|
             801|
             9(?:
               0[78]|
               [2-47]
             )
           )|
-          1443|
+          1(?:
+            443|
+            5[568]
+          )|
           91[123]
        </nationalNumberPattern>
         <exampleNumber>0801</exampleNumber>
@@ -4017,29 +4024,44 @@
     <!-- http://en.wikipedia.org/wiki/%2B385 -->
     <territory id="HR">
       <generalDesc>
-        <nationalNumberPattern>[19]\d{1,2}</nationalNumberPattern>
-        <possibleNumberPattern>\d{2,3}</possibleNumberPattern>
+        <nationalNumberPattern>[19]\d{1,5}</nationalNumberPattern>
+        <possibleNumberPattern>\d{2,6}</possibleNumberPattern>
       </generalDesc>
       <shortCode>
         <nationalNumberPattern>
-          1(?:
-            12|
-            92
+         1(?:
+            1[28]|
+            16\d{3}|
+            987|
+            9[2-5]
           )|
           9[34]
         </nationalNumberPattern>
         <exampleNumber>112</exampleNumber>
       </shortCode>
       <emergency>
+        <!-- 93 (fire dep) and 94 (ambulance) don't appear in the latest ITU
+             document, but still on various websites.
+             Need to verify that they are no longer valid before removing. -->
         <nationalNumberPattern>
           1(?:
             12|
-            92
+            9[2-4]
           )|
           9[34]
         </nationalNumberPattern>
         <exampleNumber>112</exampleNumber>
       </emergency>
+      <expandedEmergency>
+        <nationalNumberPattern>
+        19(?:
+          5|
+          87
+          )
+        </nationalNumberPattern>
+        <possibleNumberPattern>\d{3,4}</possibleNumberPattern>
+        <exampleNumber>195</exampleNumber>
+      </expandedEmergency>
     </territory>
 
     <!-- Haiti -->
@@ -5167,11 +5189,11 @@
         <possibleNumberPattern>\d{3}</possibleNumberPattern>
       </generalDesc>
       <shortCode>
-        <nationalNumberPattern>11[0189]</nationalNumberPattern>
+        <nationalNumberPattern>11[024-9]</nationalNumberPattern>
         <exampleNumber>119</exampleNumber>
       </shortCode>
       <emergency>
-        <nationalNumberPattern>11[0189]</nationalNumberPattern>
+        <nationalNumberPattern>11[02689]</nationalNumberPattern>
         <exampleNumber>119</exampleNumber>
       </emergency>
     </territory>
@@ -6083,10 +6105,12 @@
       <shortCode>
         <nationalNumberPattern>
           0(?:
-            [24589]0|
-            [37][01]|
-            6[0568]|
-            8[09]
+            [249]0|
+            3[01]|
+            5[015]|
+            6[01568]|
+            7[0-578]|
+            8[089]
           )|
           53053|
           7766|
@@ -6105,7 +6129,7 @@
         <exampleNumber>7766</exampleNumber>
       </premiumRate>
       <carrierServices>
-        <nationalNumberPattern>050</nationalNumberPattern>
+        <nationalNumberPattern>05[015]</nationalNumberPattern>
         <possibleNumberPattern>\d{3}</possibleNumberPattern>
         <exampleNumber>050</exampleNumber>
       </carrierServices>
@@ -6128,8 +6152,12 @@
         <exampleNumber>066</exampleNumber>
       </emergency>
       <expandedEmergency>
-        <!-- Found information online that 089 is a tip line for anonymous crime reporting. -->
-        <nationalNumberPattern>089</nationalNumberPattern>
+        <nationalNumberPattern>
+         0(?:
+           61|
+           8[89]
+         )
+        </nationalNumberPattern>
         <possibleNumberPattern>\d{3}</possibleNumberPattern>
       </expandedEmergency>
     </territory>
@@ -7132,18 +7160,23 @@
     <!-- Solomon Islands -->
     <territory id="SB">
       <generalDesc>
-        <nationalNumberPattern>[19]\d{2}</nationalNumberPattern>
+        <nationalNumberPattern>[127-9]\d{2}</nationalNumberPattern>
         <possibleNumberPattern>\d{3}</possibleNumberPattern>
       </generalDesc>
       <shortCode>
         <nationalNumberPattern>
           1(?:
-            0[02-79]|
+            [02]\d|
             1[12]|
-            2[0-26]|
-            4[189]|
-            68
+            [35][01]|
+            [49][1-9]|
+            6[2-9]|
+            7[7-9]|
+            8[0-8]
           )|
+          269|
+          777|
+          835|
           9(?:
             [01]1|
             22|
@@ -8158,7 +8191,7 @@
           )|
           [2-9](?:
             11|
-            \d{4,5}
+            \d{3,5}
           )
         </nationalNumberPattern>
         <exampleNumber>911</exampleNumber>
@@ -8287,6 +8320,7 @@
         <!-- https://support.google.com/plus/answer/1304917
              611 is listed as working from "most" wireless carriers. -->
         <nationalNumberPattern>
+          [2-9]\d{3}|
           33669|
           611
         </nationalNumberPattern>
@@ -8713,8 +8747,8 @@
       <shortCode>
         <nationalNumberPattern>
           (?:
-            112|
-            99[3459]
+            11[249]|
+            99[3-59]
           )
         </nationalNumberPattern>
         <exampleNumber>999</exampleNumber>
@@ -8722,8 +8756,8 @@
       <emergency>
         <nationalNumberPattern>
           (?:
-            112|
-            99[3459]
+            11[24]|
+            99[3-59]
           )
         </nationalNumberPattern>
         <exampleNumber>999</exampleNumber>
