@@ -4,7 +4,7 @@ Auto-generated file, do not edit by hand.
 """
 from ..util import u
 
-# Copyright (C) 2011-2015 The Libphonenumber Authors
+# Copyright (C) 2011-2016 The Libphonenumber Authors
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -851,6 +851,7 @@ data = {
  '1804524':{'en': 'Colonial Heights, VA'},
  '1804526':{'en': 'Colonial Heights, VA'},
  '1804529':{'en': 'Callao, VA'},
+ '1825':{'en': 'Alberta'},
  '1734747':{'en': 'Ann Arbor, MI'},
  '1734744':{'en': 'Livonia, MI'},
  '1734741':{'en': 'Ann Arbor, MI'},
@@ -2693,7 +2694,6 @@ data = {
  '1780757':{'en': 'Edmonton, AB'},
  '1619400':{'en': 'San Diego, CA'},
  '1619401':{'en': 'El Cajon, CA'},
- '1850263':{'en': 'Graceville, FL'},
  '1619409':{'en': 'Chula Vista, CA'},
  '1801782':{'en': 'Ogden, UT'},
  '1708891':{'en': 'Calumet City, IL'},

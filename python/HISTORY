@@ -1,5 +1,24 @@
 
 ====================
+ What's new in 7.2.0
+====================
+
+Merge to upstream commit ab5e61acc087ec9f5, which is 7.2.1 (7.2.0 had an immediate
+problem on release); upstream changelog mentions no code changes, but the Java
+implementation includes a change to use nano protobufs.
+
+
+====================
+ What's new in 7.1.0
+====================
+
+Merge to upstream commit 903ac5de5b6e1112; upstream code changelog:
+   - Only upstream code change doesn't affect python version
+     (New MetadataSource implementation that reads from a single metadata file with
+     all regions' phone number metadata.)
+
+
+====================
  What's new in 7.0.0
 ====================
 

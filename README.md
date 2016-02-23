@@ -1,11 +1,16 @@
 phonenumbers Python Library
 ===========================
 
+[![Coverage Status](https://coveralls.io/repos/daviddrysdale/python-phonenumbers/badge.svg?branch=dev&service=github)](https://coveralls.io/github/daviddrysdale/python-phonenumbers?branch=dev)
+
 This is a Python port of [Google's libphonenumber library](https://github.com/googlei18n/libphonenumber)
 It supports Python 2.5-2.7 and Python 3.x (in the same codebase, with no
 [2to3](http://docs.python.org/2/library/2to3.html) conversion needed).
 
-Original Java code is Copyright (C) 2009-2013 The Libphonenumber Authors
+Original Java code is Copyright (C) 2009-2015 The Libphonenumber Authors.
+
+Release [HISTORY](python/HISTORY), derived from [upstream release notes](https://github.com/googlei18n/libphonenumber/blob/master/java/release_notes.txt).
+
 
 Example Usage
 -------------
