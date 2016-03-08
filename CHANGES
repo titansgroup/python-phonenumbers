@@ -1,4 +1,6 @@
 7.2.7
+   * Regenerate automatic files
+   * Change Colombia mobile regexps in metadata to accept new range (+57 32 32xx xxxx)
    * Merge Titans fork with its upstream: no conflicts.
 
 7.2.5

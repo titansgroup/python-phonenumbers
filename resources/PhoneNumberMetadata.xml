@@ -5288,6 +5288,7 @@
       </fixedLine>
       <mobile>
         <nationalNumberPattern>
+        <!-- Local (titans) changes to support (+57 32 32xx xxxx) range (32 on the prefix) check COMPS-178  -->
           3(?:
             0[0-5]\d|
             1\d{2}|
