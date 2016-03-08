@@ -5289,11 +5289,12 @@
       <mobile>
         <nationalNumberPattern>
           3(?:
-            0[0-5]|
-            1\d|
-            2[0-2]|
-            5[01]
-          )\d{7}
+            0[0-5]\d|
+            1\d{2}|
+            2[0-2]\d|
+            232|
+            5[01]\d
+          )\d{6}
         </nationalNumberPattern>
         <possibleNumberPattern>\d{10}</possibleNumberPattern>
         <exampleNumber>3211234567</exampleNumber>
