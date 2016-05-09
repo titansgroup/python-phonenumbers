@@ -19,14 +19,14 @@ from phonenumbers.util import u
 # limitations under the License.
 
 data = {
- '1650960':('America/Los_Angeles',),
- '612':('Australia/Sydney',),
- '1':('America/New_York', 'America/Chicago', 'America/Winnipeg', 'America/Los_Angeles'),
- '1201':('America/New_York',),
- '1212812':('America/New_York',),
- '1604':('America/Winnipeg',),
- '1617423':('America/Chicago',),
- '1989':('Ameriac/Los_Angeles',),
- '82':('Asia/Seoul',),
  '1234':('America/New_York',),
+ '612':('Australia/Sydney',),
+ '1650960':('America/Los_Angeles',),
+ '1201':('America/New_York',),
+ '1604':('America/Winnipeg',),
+ '1989':('Ameriac/Los_Angeles',),
+ '1':('America/New_York', 'America/Chicago', 'America/Winnipeg', 'America/Los_Angeles'),
+ '1212812':('America/New_York',),
+ '1617423':('America/Chicago',),
+ '82':('Asia/Seoul',),
 }
