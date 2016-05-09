@@ -1,0 +1,19 @@
+These Tests are Titans Group, internal only
+===========================================
+
+
+Their main purpose is to give more confidence
+for people changing the ranges we use, and
+to verify if our custom ranges still work
+after merging with the upstream library.
+
+This  directory does not exist upstream
+____________________________________________
+
+
+NB. This did not exist for earlier changes
+on the library, and only keep track from changes
+from May 2016 onwards
+
+
+
