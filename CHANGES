@@ -1,3 +1,7 @@
+7.2.8
+   * Change Brazilian 6X area codes to accept either 8 or 9 digit for mobile
+   * Regenerate automatica files
+
 7.2.7
    * Regenerate automatic files
    * Change Colombia mobile regexps in metadata to accept new range (+57 32 32xx xxxx)
