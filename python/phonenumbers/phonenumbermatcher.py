@@ -47,8 +47,7 @@ except ImportError:  # pragma no cover
     # dependency.  The hack below works around this.
     import os
     import sys
-    if (os.path.basename(sys.argv[0]) == "buildmetadatafromxml.py" or
-        os.path.basename(sys.argv[0]) == "buildprefixdata.py"):
+    if os.path.basename(sys.argv[0]) in ("buildmetadatafromxml.py", "buildprefixdata.py"):
         prnt("Failed to import generated data (but OK as during autogeneration)", file=sys.stderr)
         _ALT_NUMBER_FORMATS = {}
     else:
@@ -158,7 +157,7 @@ _INNER_MATCHES = (
     # Breaks on a hyphen - e.g. "12345 - 332-445-1234 is my number."  We
     # require a space on either side of the hyphen for it to be considered a
     # separator.
-    re.compile(u("(?u)(?:\\p{Z}-|-\\s)\\s*(.+)")),
+    re.compile(u("(?u)(?:\\s-|-\\s)\\s*(.+)")),
     # Various types of wide hyphens. Note we have decided not to enforce a
     # space here, since it's possible that it's supposed to be used to break
     # two numbers without spaces, and we haven't seen many instances of it

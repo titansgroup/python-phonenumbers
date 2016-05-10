@@ -98,6 +98,7 @@ from .phonenumberutil import (COUNTRY_CODE_TO_REGION_CODE, SUPPORTED_REGIONS,
                               format_number,
                               format_out_of_country_calling_number,
                               format_out_of_country_keeping_alpha_chars,
+                              invalid_example_number,
                               is_alpha_number,
                               is_nanpa_country,
                               is_number_match,
@@ -134,7 +135,7 @@ from .phonenumbermatcher import PhoneNumberMatch, PhoneNumberMatcher, Leniency
 
 # Version number is taken from the upstream libphonenumber version
 # together with an indication of the version of the Python-specific code.
-__version__ = "7.2.8"
+__version__ = "7.3.2"
 
 __all__ = ['PhoneNumber', 'CountryCodeSource', 'FrozenPhoneNumber',
            'REGION_CODE_FOR_NON_GEO_ENTITY', 'NumberFormat', 'PhoneNumberDesc', 'PhoneMetadata',
@@ -160,6 +161,7 @@ __all__ = ['PhoneNumber', 'CountryCodeSource', 'FrozenPhoneNumber',
            'format_number',
            'format_out_of_country_calling_number',
            'format_out_of_country_keeping_alpha_chars',
+           'invalid_example_number',
            'is_alpha_number',
            'is_nanpa_country',
            'is_number_match',

@@ -1,5 +1,16 @@
 
 ====================
+ What's new in 7.3.0
+====================
+
+Merge to upstream commit d933631fbf15; code changes:
+   - Added support for region_code of None in example_number_for_type()
+   - Added invalid_example_number()
+   - Improvements to docstring for parse method
+   - Update is_number_geographical to return true for geographical mobile numbers.
+
+
+====================
  What's new in 7.2.0
 ====================
 
